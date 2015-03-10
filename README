@@ -1,0 +1,21 @@
+# Chris Pollard
+# Duke University
+
+LLR README
+----------
+This is a simple library to calculate log likelihood ratios, p-values, and
+number of standard deviations (assuming gaussian fluctuations).
+
+See LLR.h for documentation on functions.
+See main.cxx for an example of how to use the functions in LLR.h.
+
+In order to build the example, run "make" in this directory, then call
+
+$ ./main input_file.root sm_histname bsm_histname0 [bsm_histname1 ...]
+
+to calculate the nsigma deviations that bsm_histname0 [bsm_histname1 ...]
+have from the sm_histname template. bsm_histnameX and
+sm_histname must be histograms in input_file.root.
+
+Obviously you can write your own equivalent to "main.cxx" which fits
+your needs.
